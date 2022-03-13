@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Post</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="container">
+        <h1>New Post</h1>
+
+        <form id="create-post-form">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" value="" required><br>
+
+            <label for="Author">Author</label>
+            <input type="text" id="author" name="author" value="" required><br>
+            
+            
+            <label for="Content">Content</label>
+            <textarea name="content" id="content-textarea" cols="30" rows="10" required></textarea>
+
+            <label for="tags">Tags</label>
+            <select name="tags" id="tags" size="3" multiple required>
+                <option value="cars">Cars</option>
+                <option value="karate">Karate</option>
+                <option value="social">Social</option>
+            </select>
+
+
+            <button type="submit" class="submitButton">Create</button>
+            
+            <a href="index.html"><i class="fas fa-arrow-left"></i> Back</a>
+        </form>
+    </div>
+
+    <!-- <div class="container">
+        <hr>
+        <h1>Create New Post</h1>
+        <hr>
+    
+        <form action="http://localhost:5000/posts" method="POST">
+            <div class="form-group">
+                <label for="Title">Title</label>
+                <input class="form-control" name="title"> 
+            </div>
+    
+            <div class="form-group">
+                <label for="Author">Author</label>
+                <input class="form-control" name="author">
+            </div>
+    
+            <div class="form-group">
+                <label for="Content">Content</label>
+                <textarea name="content" id="content-textarea" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="Tags">Tags</label>
+                <select name="tags" id="tags" size="3">
+                    <option value="cars">Cars</option>
+                    <option value="karate">Karate</option>
+                    <option value="social">Social</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submitButton">Create</button>
+            
+            <a href="index.html"><i class="fas fa-arrow-left"></i> Back</a>
+        </form>
+    </div> -->
+
+    <script src="js/create-post.js"></script>
+</body>
+</html>

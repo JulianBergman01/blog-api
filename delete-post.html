@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Post</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="container">
+        <h1>Delete Post</h1>
+
+        <form id="delete-post-form">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" value="" required><br>
+
+            <label for="Author">Author</label>
+            <input type="text" id="author" name="author" value="" required><br>
+            
+            
+            <label for="Content">Content</label>
+            <textarea name="content" id="content-textarea" cols="30" rows="10" required></textarea>
+
+            
+
+
+            <button type="submit" class="deleteButton">Delete</button>
+            
+            <a href="index.html"><i class="fas fa-arrow-left"></i> Back</a>
+        </form>
+    </div>
+
+    <script src="js/delete-post.js"></script>
+</body>
+</html>
